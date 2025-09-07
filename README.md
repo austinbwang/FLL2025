@@ -2,7 +2,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center" style="padding: 0; margin: 0;">
-  <a href="https://github.com/aspenbw/TornadoFLL">
+  <a href="https://github.com/austinbwang/FLL2025">
     <img src="images/#" alt="Titanium Tornados" height="230">
   </a>
   <h3 style="color:#dd5a44;font-size:30px;font-weight:780">Team Pokemon</h3>
@@ -47,8 +47,8 @@ The following list include everything you need to continue the Setup.
 #### 1. Clone the repo
 
    ```sh
-   cd {directory/for/saving/your/tornado/project}
-   git clone https://github.com/Aspenbw/TornadoFLL2024.git
+   cd {directory/for/saving/your/pokemon/project}
+   git clone https://github.com/Aspenbw/PokemonFLL2024.git
    ```
    provide the username and password to clone
 
@@ -57,8 +57,8 @@ The following list include everything you need to continue the Setup.
   Clone by SSH (recommended)
 
    ```sh
-   cd {directory/for/saving/your/tornado/project}
-   git clone git@github.com:Aspenbw/TornadoFLL2023.git
+   cd {directory/for/saving/your/pokemon/project}
+   git clone git@github.com:Aspenbw/PokemonFLL2023.git
    ```
 
   Follow the instruction:
