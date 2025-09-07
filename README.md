@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center" style="padding: 0; margin: 0;">
   <a href="https://github.com/austinbwang/FLL2025">
-    <img src="images/#" alt="Titanium Tornados" height="230">
+    <img src="images/#" alt="Team Pokemon" height="230">
   </a>
   <h3 style="color:#dd5a44;font-size:30px;font-weight:780">Team Pokemon</h3>
   <p>
