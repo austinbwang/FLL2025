@@ -70,7 +70,7 @@ If that works, you know Python is fine.
 
 ##### 1.4  Installing required packages
 
-- required packages and the Pylance extension ([offical link](https://pybricks.com/projects/tutorials/dev/tools/vscode/#installing-python-and-the-  -extension))
+- required packages and the Pylance extension ([offical link](https://pybricks.com/projects/tutorials/dev/tools/vscode/#installing-python-and-the-extension))
 
 Install the pybricks, pybricksdev and other required package in the virtual environment (make sure you are in the virtual environment (.venv prompt)):
 `````shell
