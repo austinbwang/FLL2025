@@ -44,41 +44,33 @@ The following list include everything you need to continue the Setup.
 
 ### Setup Local Development Env
 
-#### 1. Clone the repo
+#### 1. Setup VSCode
 
-   ```sh
-   cd {directory/for/saving/your/pokemon/project}
-   git clone https://github.com/Aspenbw/PokemonFLL2024.git
-   ```
-   provide the username and password to clone
+##### 1.1  Open the Command Palette (`⇧⌘P` / `Ctrl+Shift+P`), search for the Python: Create Environment command, and select `Venv`
 
-  Or
+Make sure that venv is installed in Python, if `Command Palette` return you an error, try the following solution:
 
-  Clone by SSH (recommended)
+Run this in PowerShell or CMD:
 
-   ```sh
-   cd {directory/for/saving/your/pokemon/project}
-   git clone git@github.com:Aspenbw/PokemonFLL2023.git
-   ```
+`````shell
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip setuptools virtualenv
+`````
 
-  Follow the instruction:
-  - [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+Then try:
+`````shell
+python -m venv test_env
+`````
 
-  - [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+If that works, you know Python is fine.
 
-  - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+##### 1.2  The command presents a list of interpreters that can be used as a base for the new virtual environment, please select `Python 3.1x.x`.
 
-#### 2. Setup VS Code
+##### 1.3  To use the virtual environment, open the command pallette again and search for `py create term` and select Python: Create Terminal.
 
-##### 2.1  Open the Command Palette (`⇧⌘P`), search for the Python: Create Environment command, and select `Venv`
+##### 1.4  Installing required packages
 
-##### 2.2  The command presents a list of interpreters that can be used as a base for the new virtual environment, please select `Python 3.1x.x`.
-
-##### 2.3  To use the virtual environment, open the command pallette again and search for `py create term` and select Python: Create Terminal.
-
-##### 2.4  Installing required packages
-
-- required packages and the Pylance extension ([offical link](https://pybricks.com/projects/tutorials/dev/tools/vscode/#installing-python-and-the-pylance-extension))
+- required packages and the Pylance extension ([offical link](https://pybricks.com/projects/tutorials/dev/tools/vscode/#installing-python-and-the-  -extension))
 
 Install the pybricks, pybricksdev and other required package in the virtual environment (make sure you are in the virtual environment (.venv prompt)):
 `````shell
@@ -87,10 +79,26 @@ pip3 install -r requirements.txt
 # pip install pybricksdev
 `````
 
-- Then follow the link above or search for `Pylance`` in the Extensions in VS Code and click Install to install the Pylance extension.
+##### 1.5  Install VSCode Extension [pybricks-runner](https://marketplace.visualstudio.com/items?itemName=AnandSingh.pybricks-runner)
+
+##### 1.6  Install VSCode Extension [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+
+##### 1.7  Install VSCode Extension [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+##### 1.8  Clone the Pokemon project by using the `GitHub Pull Requests` Extension
+
+   ```sh
+   https://github.com/austinbwang/FLL2025.git
+   ```
+   provide the username and password to clone
 
 
-##### 2.5  Running programs ([offical link](https://pybricks.com/projects/tutorials/dev/tools/vscode/#downloading-and-running-programs))
+
+#### 2. Running programs ([offical link](https://pybricks.com/projects/tutorials/dev/tools/vscode/#downloading-and-running-programs))
+
+It is recommended to run the program by using the VSCode extension: [pybricks-runner](https://marketplace.visualstudio.com/items?itemName=AnandSingh.pybricks-runner)
+
+Alternatively, the following command should be working fine: 
 
 - For Powered up hubs, you must use the pybricksdev command line tool instead.
 
@@ -101,7 +109,7 @@ pybricksdev run ble main.py
 - If you have more than one active hub, you can specify a specific hub by name:
 
 `````shell
-pybricksdev run ble --name "AspenBot" main.py
+pybricksdev run ble --name "AustinBot" main.py
 ````````
 
 
